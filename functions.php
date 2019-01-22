@@ -86,3 +86,8 @@ if ( ! function_exists( 'elementor_hello_theme_register_elementor_locations' ) )
 	}
 }
 add_action( 'elementor/theme/register_locations', 'elementor_hello_theme_register_elementor_locations' );
+
+/*
+* Add standard wordpress post formats
+*/
+add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio ', 'chat' ) );
